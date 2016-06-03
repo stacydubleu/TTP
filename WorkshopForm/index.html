@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document 06032016 JS</title>	
+</head>
+<body>
+	<div id="main-content">
+		<h1>Sign up</h1>
+		<p>Hello! Hello!</p>
+		<p>Please enter '12345678' for the password.</p>
+		<!--function.getElementByTagName('p') will get out the p wrapped content in array form again DOM manipulation just front end stuff
+			document.getElementsByTagName('p')[0].innerText="Hello"; changes the first p to hello.
+			
+		-->
+		<form onsubmit="return validateForm()"> <!--Access the js script for validateForm function-->
+			<label for="username">Username</label>
+			<input type="text" name="username" id="username">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+			<input type="submit" value="Sign Up">
+		</form>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
