@@ -6,10 +6,9 @@ $(document).ready(function(){
   $("#hover").on('mouseover', function() {
     var player = $("#player");
     console.log("help");
-    SC.oEmbed('https://soundcloud.com/lin-ochoa/in-the-yard', {
-      maxheight: 200
-    }, function(res) {
-      $("#player").html(res.html);
+    var track_url = 'http://soundcloud.com/forss/flickermood';
+    SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
+    console.log('oEmbed response: ', oEmbed);
     });
   });
 });
