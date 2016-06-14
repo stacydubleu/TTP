@@ -6,9 +6,12 @@ $(document).ready(function(){
   $("#hover").on('mouseover', function() {
     var player = $("#player");
     console.log("help");
-    var track_url = 'http://soundcloud.com/forss/flickermood';
+    var track_url = 'https://soundcloud.com/lin-ochoa/in-the-yard';
     SC.oEmbed(track_url, { auto_play: true }).then(function(oEmbed) {
-    console.log('oEmbed response: ', oEmbed);
+    console.log('oEmbed response: ', oEmbed); 
+    document.getElementById("player").innerHTML += oEmbed['html'];
+    $("#hover").hide();
     });
   });
+
 });

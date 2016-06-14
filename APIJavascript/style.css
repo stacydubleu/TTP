@@ -1,22 +1,27 @@
 body{
-    height: 500px;
+    height: 100px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 150px;
+    padding-top: 50px;
 }
 
 h1{
- 	font-size: 50px;
- 	margin-top: 50px;
- 	letter-spacing: 4px;
-
+	font-size: 30px;
+    font-family: Sans-serif;
+    color: #5090CD;
 }
 
 h2{
-	font-color: white;
-	width:300px;
-	background-color: black;
-	border-radius: 15px;
-	font-size: 40px;
+	font-size: 20px;
+	font-family: Sans-serif;
+	color: #5090CD;
+}
+#hover{
+	margin-top: 100px;
+}
+
+#player{
+	height: 50px;
+	width: 80%;
 	margin: 0 auto;
 }
