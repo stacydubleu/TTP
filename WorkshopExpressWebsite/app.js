@@ -5,9 +5,10 @@ var exphbs = require('express-handlebars');
 
 var app = express();
 
+var mustaches = ['a.png', 'b.png', 'c.png', 'd.png', 'e.png', 'f.png', 'g.png', 'h.png', 'i.png', 'j.png', 'k.png', 'l.png', 'm.png', 'n.png', 'o.png', 'p.png', 'q.png', 'r.png', 's.png', 't.png'];
 app.engine('handlebars', exphbs({defaultLayout:'main'})); //goes to main for layout 
 app.set('view engine', 'handlebars'); //npm documentation readddd
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
 
 //incoming request matches, top to bottom. 
 
@@ -21,9 +22,10 @@ app.get("/about", function(req, res){
 });
 
 app.get("/inspiration", function(req, res){
-	res.render('inspiration');
+	var randomstaches = mustaches[Math.floor(Math.random()*mustaches.length)];
+	res.render('inspiration', {stuff: randomstaches});
 });
 
 app.listen(3000, function(){
-	console.log('Inspriation app listening on port 3000...');
+	console.log('Inspiration app listening on port 3000...');
 });
