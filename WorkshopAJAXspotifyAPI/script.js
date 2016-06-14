@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#search").on("submit",function(e){
+  $("#search").keyup("submit",function(e){ //replace keyup with on
     e.preventDefault();
     var formData = {
       'q'              : $('input[name=q]').val(),
