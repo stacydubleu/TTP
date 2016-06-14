@@ -1,17 +1,21 @@
 body{
     height: 500px;
     text-align: center;
+    margin: 0 auto;
+    padding-top: 150px;
 }
 
 h1{
  	font-size: 50px;
  	margin-top: 50px;
  	letter-spacing: 4px;
+
 }
 
 h2{
+	font-color: white;
 	width:300px;
-	background-color: lightblue;
+	background-color: black;
 	border-radius: 15px;
 	font-size: 40px;
 	margin: 0 auto;
